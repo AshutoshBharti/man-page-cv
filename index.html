@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<pre class="manheader">ASHUTOSH BHARTI                      Linux User's Manual                      ASHUTOSH BHARTI(8)</pre>
+<pre class="manheader">ASHUTOSH BHARTI                      User's Resume Manpage                      ASHUTOSH BHARTI(8)</pre>
 <h1>NAME</h1>
 <p class="subtext">
   Ashutosh Bharti - that person who does sre/devops at Hungerbox, Bangalore
@@ -15,22 +15,25 @@
 
 <h1>Work Quote</h1>
 <p class="subtext">
-  The lesser you are needed by developers, the better you are doing as SRE/Devops
+  The lesser you are needed by developers, the better you are doing as an SRE/Devops
 </p>
 <h1>SYNOPSIS</h1>
 <p class="subtext">
-  ashutosh [--system-reliability-engineer] [--devops] [ --network engineer]
-
+ashutosh <a href="#option1">[--system-reliability-engineer]</a> <a href="#option2">[--devops-engineer]</a> <a href="#option3">[--network-engineer]</a>
 </p>
 
+<h1>SEE</h1>
+<p class="subtext">
+<a href="#option4">[SKILLS]</a> <a href="#option5">[HISTORY]</a> <a href="#option6">[EDUCATION]</a> <a href="#option7">[CONTACT]</a>
+</p>
 <h1>STORY SO FAR (if you don't want to read complete, just read this)</h1>
 <p class="subtext">
-Started career as a Network engineer (ECE graduate) at Orange Business Services, working on monitoring its backbone and troubleshooting related issues. It is here, where I developed the understanding of networks, ip, subnets and NMS softwares.</p>
+Started career as a Network engineer (ECE graduate) at Orange Business Services, worked on monitoring its backbone and troubleshooting related issues. It is here, where I developed the understanding of networks, ip, subnets and NMS softwares.</p>
 <p class="subtext">
-Joined helpshift, as a Systems Engineer, started with running basic linux commands, creating users, cleaning disk spaces. Moved onto automating sysadmin tasks and then Devops. I learnt, tried, broke, worked and reworked tasks involving the below mentioned tech stacks under skills.
+Joined helpshift, as a Systems Engineer, started with running basic linux commands, creating users, cleaning disk spaces. Moved onto automating sysadmin tasks and then Devops. I learnt, tried, broke, worked and reworked tasks involving the below mentioned tech stacks under <a href="#option4">[SKILLS]</a>.
 </p>
 <p class="subtext">
-My current stint with Hungerbox started as a freelance consultant. After 6 months of working as a freelancer with them, decided to join them in full capacity, when they had to move the entire infrastructure to a different AWS account, something I never had done, creating infra from the ground up.
+My current stint with Hungerbox started as a freelance consultant. After 6 months of working as a freelancer with them, decided to join in full capacity, when they had to move the entire infrastructure to a different AWS account, something I never had done, creating infra from the ground up. Working as individual contributer and lead for SRE/Devops.
 </p>
 <p class="subtext">
   Highlights:
@@ -40,19 +43,19 @@ My current stint with Hungerbox started as a freelance consultant. After 6 month
   <li> <b>Azure</b>: replicating AWS infra in azure from the ground up;</li>
   <li> <b>IaC</b>: moving the infra to from no code (all manual) to infrastructure;</li>
   <li> <b>Scale</b>: handling traffic growing from 11K rps to 200K rps;</li>
-  <li> <b>Monitoring</b>: Centralised monitoring for infra of 5 accounts and 2 cloud providers;</li>
+  <li> <b>Monitoring</b>: centralised monitoring for infra of 5 accounts and 2 cloud providers;</li>
   <li> <b>Automations</b>: custom monitoring scripts, tools for auto alert's remediations;</li>
   <li> <b>CI/CD</b>: designing, writing, deploying complete CI/CD infra, spans across AWS, Azure;</li>
   <li> <b>Upgrades</b>: carrying out upgrades (no downtime): PG, Mongo, MySQL, Kafka, Zookeeper;</li>
   <li> <b>Enabler</b>: reducing dependency of developers on devops/sre (25 to 4 weekly tickets);</li>
-  <li> <b>Bookkeeper</b>: Established a culture of documentation, processes, audits and RCAs;</li>
-  <li> <b>Cautious</b>: Taking care of security audit needs for the company;</li>
+  <li> <b>Bookkeeper</b>: established a culture of documentation, processes, audits and RCAs;</li>
+  <li> <b>Cautious</b>: taking care of security audit needs for the company;</li>
   <li> <b>Moneyminded</b>: moving to serverless as/where possible, optimizations to contain costs</li>
 </ul>
 
-<h1>SKILLS</h1>
+<h1 id="option4">SKILLS</h1>
 <p class="subtext">
- <table class="subtext", style="width:50%">
+ <table class="subtext" style="width:50%">
   <tr>
     <td>Ansible</td>
     <td>Terraform</td>
@@ -96,42 +99,43 @@ My current stint with Hungerbox started as a freelance consultant. After 6 month
     <td>ProxySQL</td>
   </tr>
 </table>
-
 </p>
 
-<h1>HISTORY</h1>
-<p class="subtext">
+<h1 id="option5">HISTORY</h1>
+<p id="option1" class="subtext">
 --system-reliability-engineer <br>
-   : <a align="right", href="https://www.hungerbox.com/">Hungerbox, Bangalore</a><br>
+   : <a href="https://www.hungerbox.com/">Hungerbox, Bangalore</a><br>
    : October 2019 - Current
 </p>
 <ul class="doublesubtext">
   <li>  Working on AWS stack: EC2, RDS, Lambda, S3, Cloudfront, Cloudwatch, Route53, ElasticCache, VPC, DMS etc </li>
   <li>  Working in a team of 3, moved entire AWS infra to a new account in one and half months: Terraform, Cloudformation, Ansible and manual</li>
-  <li>  Moved all static websites to s3 + lambda + cloudfront archtecture </li>
-  <li>  Custom App for crons monitoring, deployment and alerts </li>
+  <li> Adopted Prometheus and integrated it with the infra for monitoring. We monitor at a resoultion of 10s, with Mean Time to First Response at 60s </li>
+  <li> Created entire CI/CD pipeline from scratch: Git (local) + Gitlab + Jenkins (with docker slaves) + Code deploy + AWS Systems Manager </li>
+  <li>  Wrote Custom app (django) which provides UI for crons monitoring, deployment and alerts </li>
   <li>  Moved the infra from All Manual working style to 70 percent Infrastructure as Code
     <ul>
       <li> Ansible for Creating and Managing Infrastructure </li>
       <li> Terraform for Creating Infra and maintaining State </li>
       <li> Daily reports about changes in Infra in past 24 hours </li> </ul>
   <li> Created a mini infra in a different account for load testing and staging. It is  maintained as a replica of production infra</li>
-  <li> Created/Maintaining Docker environments for Application Stack for developers for local development </li>
+  <li> Created/Maintaining Docker environments of Application Servers for developers, used in local development </li>
   <li> Put in processes for Access Control, Change Management, adopted Confluence for Documentation </li>
   <li> Optimized costs to keep it constant while the infra grew by 40 percent
     <ul>
       <li> Evaluated and partnered with discount partners </li>
       <li> Put automations to resize, shut down resources during no usage hours</li>
+      <li>  Moved all static websites to s3 + lambda + cloudfront archtecture </li>
+      <li> Moved RDS instances to aurora, jenkins slaves and gitlab runners to docker from ec2</li>
+      <li> Moved Redis from elasticcache to ec2 with automated failover and periodic snapshots configured</li>
     </ul>
-      <li> Extended MySQL RDS with ProxySQL for access Auditing </li>
+      <li> Extended MySQL RDS with ProxySQL for access Auditing, loadbalancing and failover </li>
   <li> Executed Pentest of Network and Application with Security Audit providers, resolved all the findings in a month, Rescan passed </li>
-  <li> Adopted Prometheus and integrated it with the infra for monitoring. We monitor at a resoultion of 10s, with Mean Time to First Response at 60s </li>
-  <li> Created entire CI/CD pipeline from scratch: Git (local) + Gitlab + Jenkins (with docker slaves) + Code deploy + AWS Systems Manager </li>
 </ul>
 
-<p class="subtext">
---devops <br>
-   : <a align="right", href="https://www.helpshift.com/">Helpshift, Pune</a><br>
+<p id="option2" class="subtext">
+--devops-engineer <br>
+   : <a href="https://www.helpshift.com/">Helpshift, Pune</a><br>
    : Mar 2015 - Oct 2019
 </p>
 <ul class="doublesubtext">
@@ -164,9 +168,9 @@ My current stint with Hungerbox started as a freelance consultant. After 6 month
 </ul>
 
 
-<p class="subtext">
+<p id="option3" class="subtext">
 --network-engineer <br>
-   : <a align="right", href="https://www.orange-business.com/en">Orange Business Services, Gurgaon</a><br>
+   : <a href="https://www.orange-business.com/en">Orange Business Services, Gurgaon</a><br>
    : Jul 2014 - Mar 2015
 </p>
 <ul class="doublesubtext">
@@ -174,21 +178,22 @@ My current stint with Hungerbox started as a freelance consultant. After 6 month
   <li> Developed understanding of subnets, CIDRs, Ips, NMS softwares </li>
 </ul>
 
-<h1>EDUCATION</h1>
+<h1 id="option6">EDUCATION</h1>
 <p class="subtext bottomcut">
-  * Bachelor of Technology - LNMIIT, JAIPUR - 2014;<br>
+  * Bachelor of Technology - LNMIIT, Jaipur - 2014;<br>
 </p>
 <p class="subtext bottomcut">
   * Higher Secondary - Fergusson College, Pune - 2009;<br>
 </p>
 <p class="subtext bottomcut">
-  * Senior Secondary - DAV Public School, Gaya - 2007;<br>
+  * Senior Secondary - DAV Public School, Gaya - 2007<br>
 </p>
 <br>
 
-<h1>CONTACT</h1>
+<h1 id="option7">CONTACT</h1>
 <ul class="subtext">
   <li> E-mail:      ashutosh dot bharti at hotmail dot com</li>
+  <li> Phone:       (91) 8983 4849 43</li>
   <li> Github:     <a href="https://github.com/AshutoshBharti/">https://github.com/AshutoshBharti/</a></li>
   <li> Stackoverflow:     <a href="https://stackoverflow.com/users/7512243/ashutosh-bharti">https://stackoverflow.com/users/7512243/ashutosh-bharti</a></li>
   <li> LinkedIn:	 <a href="https://www.linkedin.com/in/ashutoshbharti/">https://www.linkedin.com/in/ashutoshbharti/</a></li>
@@ -201,7 +206,7 @@ My current stint with Hungerbox started as a freelance consultant. After 6 month
 </pre>
 
 <p class="footer">
-  © [May, 2020] Ashutosh Bharti  [91 - 8983-4849-43]  [ashutosh.bharti@hotmail.com]
+  © Ashutosh Bharti [91 - 8983484943] [ashutosh.bharti@hotmail.com] [cat lover] [accepts pay as Beer and Biryani]
 </p>
 
 </body>

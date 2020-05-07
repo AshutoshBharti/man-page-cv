@@ -1,4 +1,4 @@
-# man-page-cv
-This is my resume write in Linux Manual Style, based on Ricardo Martin's blog (http://www.ricardomartins.com.br/).
+# man-page-resume
+This is my resume write in Linux Manual Style
+Visit: https://ashutoshbharti.github.io/man-page-resume/
 
-Please visit: https://cleicar.github.io/man-page-cv/

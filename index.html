@@ -112,6 +112,7 @@ My current stint with Hungerbox started as a freelance consultant. After 6 month
   <li>  Working in a team of 3, moved entire AWS infra to a new account in one and half months: Terraform, Cloudformation, Ansible and manual</li>
   <li> Adopted Prometheus and integrated it with the infra for monitoring. We monitor at a resoultion of 10s, with Mean Time to First Response at 60s </li>
   <li> Created entire CI/CD pipeline from scratch: Git (local) + Gitlab + Jenkins (with docker slaves in ECS) + Code deploy + AWS Systems Manager </li>
+  <li> Integrated CI/CD pipeline with Gatling for applications performance testing during the development </li>
   <li>  Wrote Custom app (django) which provides UI for crons monitoring, deployment and alerts </li>
   <li>  Moved the infra from All Manual working style to 70 percent Infrastructure as Code
     <ul>
@@ -126,8 +127,8 @@ My current stint with Hungerbox started as a freelance consultant. After 6 month
       <li> Evaluated and partnered with discount partners </li>
       <li> Put automations to resize, shut down resources during no usage hours</li>
       <li> Moved all static websites to s3 + lambda + cloudfront archtecture </li>
-      <li> Moved RDS instances to aurora, jenkins slaves and gitlab runners to docker (ecs) from ec2</li>
-      <li> Moved logs from cloudwatch to EFK (kubernetes)</li>
+      <li> Moved RDS instances to aurora, jenkins slaves and gitlab runners to docker (ECS) from ec2</li>
+      <li> Moved Kafka consumers to EKS, Pushing for services to be broken into microservices </li>
       <li> Moved Redis from elasticcache to ec2 with automated failover and periodic snapshots configured</li>
     </ul>
       <li> Extended MySQL RDS with ProxySQL for access Auditing, loadbalancing and failover </li>

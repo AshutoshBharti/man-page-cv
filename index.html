@@ -10,7 +10,7 @@
 <pre class="manheader">ASHUTOSH BHARTI                 User's Resume Manpage                 <a href="mailto: ashutosh.bharti@hotmail.com">mail: ashutosh.bharti@hotmail.com</a></pre>
 <h1>NAME</h1>
 <p class="subtext">
-  Ashutosh Bharti - that person who does sre/devops at Hungerbox, Bangalore
+  Ashutosh Bharti - that person who does sre/devops at Fireeye Inc, Bangalore
 </p>
 
 <h1>Work Quote</h1>
@@ -33,8 +33,8 @@ Started career as a Network engineer (ECE graduate) at Orange Business Services,
 Joined helpshift, as a Systems Engineer, started with running basic linux commands, creating users, cleaning disk spaces. Moved onto automating sysadmin tasks and then Devops. I learnt, tried, broke, worked and reworked tasks involving the below mentioned tech stacks under <a href="#option4">[SKILLS]</a>.
 </p>
 <p class="subtext">
-My current stint with Hungerbox started as a freelance consultant. After 6 months of working as a freelancer with them, decided to join in full capacity, when they had to move the entire infrastructure to a different AWS account, something I never had done, creating infra from the ground up. Working as individual contributer and lead for SRE/Devops.
-</p>
+
+My current stint with Fireeye Inc, started when Fireeye was setting their SRE team in Bangalore for their product 'Helix'. I am responsible for keeping the Fireeye's servers that perform the threat analysis based on logs running, latest with tech stack and secure</p>
 <p class="subtext">
   Highlights:
 </p>
@@ -103,35 +103,33 @@ My current stint with Hungerbox started as a freelance consultant. After 6 month
 
 <h1 id="option5">HISTORY</h1>
 <p id="option1" class="subtext">
---system-reliability-engineer <br>
-   : <a href="https://www.hungerbox.com/">Hungerbox, Bangalore</a><br>
-   : October 2019 - Current
+--senior-system-reliability-engineer <br>
+   : <a href="https://www.fireeye.com/">Fireeye Inc, Bangalore</a><br>
+   : August 2020 - Present
 </p>
 <ul class="doublesubtext">
-  <li>  Working on AWS stack: EC2, RDS, Lambda, S3, Cloudfront, Cloudwatch, Route53, ElasticCache, VPC, DMS etc </li>
+  <li> SRE for Fireeye's 'Helix' platform: <a href="https://www.fireeye.com/products/helix.html">https://www.fireeye.com/products/helix.html</a> </li>
+  <li> Currently moving entire tech stack of 14 applications to EKS from EC2(ami) world
+    <ul>
+      <li> With the scale that in in tens of millions of events per second, cost was becoming difficult to control in ec2 based stack </li>
+      <li> so far move 4 out of 14 services to EKS, targetting to move all by the year 2021 onset </li>
+      <li> Handling all devops, release, oncall for the stack with a team of 4 </li></ul>
+</ul>
+<h1 id="option5">HISTORY</h1>
+<p class="subtext">
+--system-reliability-engineer <br>
+   : <a href="https://www.hungerbox.com/">Hungerbox, Bangalore</a><br>
+   : October 2019 - August 2020
+</p>
+<ul class="doublesubtext">
   <li>  Working in a team of 3, moved entire AWS infra to a new account in one and half months: Terraform, Cloudformation, Ansible and manual</li>
   <li> Adopted Prometheus and integrated it with the infra for monitoring. We monitor at a resoultion of 10s, with Mean Time to First Response at 60s </li>
   <li> Created entire CI/CD pipeline from scratch: Git (local) + Gitlab + Jenkins (with docker slaves in ECS) + Code deploy + AWS Systems Manager </li>
   <li> Integrated CI/CD pipeline with Gatling for applications performance testing during the development </li>
-  <li>  Wrote Custom app (django) which provides UI for crons monitoring, deployment and alerts </li>
-  <li>  Moved the infra from All Manual working style to 70 percent Infrastructure as Code
-    <ul>
-      <li> Ansible for Creating and Managing Infrastructure </li>
-      <li> Terraform for Creating Infra and maintaining State </li>
-      <li> Daily reports about changes in Infra in past 24 hours </li> </ul>
-  <li> Created a mini infra in a different account for load testing and staging. It is  maintained as a replica of production infra</li>
+  <li>  Wrote Custom app (django) which provides UI for crons monitoring, deployment\ and alerts </li>
   <li> Created/Maintaining Docker environments of Application Servers for developers, used in local development </li>
   <li> Put in processes for Access Control, Change Management, adopted Confluence for Documentation </li>
-  <li> Optimized costs to keep it constant while the infra grew by 40 percent
-    <ul>
-      <li> Evaluated and partnered with discount partners </li>
-      <li> Put automations to resize, shut down resources during no usage hours</li>
-      <li> Moved all static websites to s3 + lambda + cloudfront archtecture </li>
-      <li> Moved RDS instances to aurora, jenkins slaves and gitlab runners to docker (ECS) from ec2</li>
-      <li> Moved Kafka consumers to EKS, Pushing for services to be broken into microservices </li>
-      <li> Moved Redis from elasticcache to ec2 with automated failover and periodic snapshots configured</li>
-    </ul>
-      <li> Extended MySQL RDS with ProxySQL for access Auditing, loadbalancing and failover </li>
+  <li> Optimized costs to keep it constant while the infra grew by 40 percent </li>
   <li> Executed Pentest of Network and Application with Security Audit providers, resolved all the findings in a month, Rescan passed </li>
 </ul>
 

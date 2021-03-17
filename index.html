@@ -2,12 +2,13 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>ashutosh - sre - hungerbox - Linux man page</title>
+  <title>ashutosh - sre - fireeye - Linux man page</title>
   <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 <body>
 
 <pre class="manheader">ASHUTOSH BHARTI                 User's Resume Manpage                 <a href="mailto: ashutosh.bharti@hotmail.com">mail: ashutosh.bharti@hotmail.com</a></pre>
+
 <h1>NAME</h1>
 <p class="subtext">
   Ashutosh Bharti - that person who does sre/devops at Fireeye Inc, Bangalore
@@ -17,30 +18,40 @@
 <p class="subtext">
   The lesser you are needed by developers, the better you are doing as an SRE/Devops
 </p>
+
 <h1>SYNOPSIS</h1>
 <p class="subtext">
-ashutosh <a href="#option1">[--system-reliability-engineer]</a> <a href="#option2">[--devops-engineer]</a> <a href="#option3">[--network-engineer]</a>
+<a href="#option8">[--senior-site-reliability-engineer]</a>  <a href="#option1">[--site-reliability-engineer-and-lead]</a>  <a href="#option2">[--devops-engineer]</a> <a href="#option3">[--network-engineer]</a>
 </p>
 
 <h1>SEE</h1>
 <p class="subtext">
 <a href="#option4">[SKILLS]</a> <a href="#option5">[HISTORY]</a> <a href="#option6">[EDUCATION]</a> <a href="#option7">[CONTACT]</a>
 </p>
-<h1>STORY SO FAR (if you don't want to read complete, just read this)</h1>
+
+<h1>STORY SO FAR (if you don't want to read complete resume just read this)</h1>
 <p class="subtext">
 Started career as a Network engineer (ECE graduate) at Orange Business Services, worked on monitoring its backbone and troubleshooting related issues. It is here, where I developed the understanding of networks, ip, subnets and NMS softwares.</p>
-<p class="subtext">
-Joined helpshift, as a Systems Engineer, started with running basic linux commands, creating users, cleaning disk spaces. Moved onto automating sysadmin tasks and then Devops. I learnt, tried, broke, worked and reworked tasks involving the below mentioned tech stacks under <a href="#option4">[SKILLS]</a>.
-</p>
-<p class="subtext">
 
-My current stint with Fireeye Inc, started when Fireeye was setting their SRE team in Bangalore for their product 'Helix'. I am responsible for keeping the Fireeye's servers that perform the threat analysis based on logs running, latest with tech stack and secure</p>
+<p class="subtext">
+Joined Helpshift, as a Systems Engineer, started with running basic linux commands, creating users, cleaning disk spaces. Moved onto automating sysadmin tasks and then Devops. I learnt, tried, broke, worked and reworked tasks involving the below mentioned tech stacks. <a href="#option4">[SKILLS]</a>. By the time I left, I was owner of monitoring (sensu + graphite), CICD, Kafka(on ec2) and Postgres(on ec2) at Helpshift.
+</p>
+
+<p class="subtext">
+Moved to Hungerbox as an SRE Lead managing a small team of 3 people (including me). I was hired to facilitate the movement of infra from one account to another and handle the daily order scale up from 40K to 4L. Wrote tons of terraform, boto3 and ansible to port the infra to IaC</a>.
+</p>
+
+<p class="subtext">
+My current role as Senior SRE with Fireeye Inc, started when Fireeye was setting their SRE team in Bangalore for their product <a href="https://www.fireeye.com/products/helix.html">'Helix'</a>. Toiled hundreds of hours in efforts to move services from EC2 to EKS. Moved monitoring from Graphite to Prometheus + VictoriaMetrics. Most notable work would be writing a REST API service (backed by <a href="https://aws.amazon.com/documentdb/">Document DB</a>) which helps devs, operations and almost everyone at Fireeye to GET relevant information about services. SRE can PUT, POST or DELETE the information about the services.
+</p>
+
 <p class="subtext">
   Highlights:
 </p>
 <ul class="subtext">
-  <li> <b>AWS</b>: moving entire AWS infra to a new account in one and half months;</li>
+  <li> <b>AWS</b>: infra that sees a scale of millions of events per second, used by Banks;</li>
   <li> <b>Azure</b>: replicating AWS infra in azure from the ground up;</li>
+  <li> <b>K8s</b>: porting services from ec2 to k8s using EKS, ECS, helm;</li>
   <li> <b>IaC</b>: moving the infra to from no code (all manual) to infrastructure;</li>
   <li> <b>Scale</b>: handling traffic growing from 11K rps to 200K rps;</li>
   <li> <b>Monitoring</b>: centralised monitoring for infra of 5 accounts and 2 cloud providers;</li>
@@ -59,30 +70,30 @@ My current stint with Fireeye Inc, started when Fireeye was setting their SRE te
   <tr>
     <td>Ansible</td>
     <td>Terraform</td>
-    <td>boto/boto3</td>
+    <td>boto/boto3/moto</td>
     <td>Azure-Python-SDK</td>
   </tr>
   <tr>
-    <td>Bash</td>
-    <td>Python</td>
+    <td>Bash, Python</td>
+    <td>Groovy</td>
     <td>Ruby</td>
     <td>Go</td>
   </tr>
   <tr>
     <td>EFK Stack</td>
     <td>Vagrant, Docker</td>
-    <td>Kubernetes</td>
+    <td>Kubernetes, EKS</td>
     <td>Atlassian Stack</td>
   </tr>
   <tr>
-    <td>Git</td>
-    <td>Gerrit</td>
-    <td>Gitlab, Jenkins</td>
+    <td>Git, Gitlab, Gerrit</td>
+    <td>Packer, Teamcity</td>
+    <td>Jenkins, Rundeck</td>
     <td>Sonarqube</td>
   </tr>
   <tr>
     <td>Newrelic</td>
-    <td>Prometheus</td>
+    <td>Prometheus, VictoriaMetrics</td>
     <td>Sensu</td>
     <td>Netdata</td>
   </tr>
@@ -102,8 +113,8 @@ My current stint with Fireeye Inc, started when Fireeye was setting their SRE te
 </p>
 
 <h1 id="option5">HISTORY</h1>
-<p id="option1" class="subtext">
---senior-system-reliability-engineer <br>
+<p id="option8" class="subtext">
+--senior-site-reliability-engineer <br>
    : <a href="https://www.fireeye.com/">Fireeye Inc, Bangalore</a><br>
    : August 2020 - Present
 </p>
@@ -111,22 +122,21 @@ My current stint with Fireeye Inc, started when Fireeye was setting their SRE te
   <li> SRE for Fireeye's 'Helix' platform: <a href="https://www.fireeye.com/products/helix.html">https://www.fireeye.com/products/helix.html</a> </li>
   <li> Currently moving entire tech stack of 14 applications to EKS from EC2(ami) world
     <ul>
-      <li> With the scale that in in tens of millions of events per second, cost was becoming difficult to control in ec2 based stack </li>
-      <li> so far move 4 out of 14 services to EKS, targetting to move all by the year 2021 onset </li>
+      <li> Wrote a REST API service used by FirEye internally to get information about the infra. The service uses Document Db as its datastore. <br> Almost all our automations, IaC, treat this as *Source of Truth* </li>
+      <li> Our apps are compute intensive (logs ingestion and analysis), leveraging k8s compute potential was needed to keep up and keep the cost down</li>
+      <li> Our app servers emit metrics upto 10K samples per second (multiplied by 1000s of servers). To keep up with it shifted monitoring to Promethues + VictoriaMetrics from collectd + statsd + Graphite </li>
       <li> Handling all devops, release, oncall for the stack with a team of 4 </li></ul>
 </ul>
-<h1 id="option5">HISTORY</h1>
-<p class="subtext">
---system-reliability-engineer <br>
+<p id="option1" class="subtext">
+--site-reliability-engineer-and-lead <br>
    : <a href="https://www.hungerbox.com/">Hungerbox, Bangalore</a><br>
    : October 2019 - August 2020
 </p>
 <ul class="doublesubtext">
-  <li>  Working in a team of 3, moved entire AWS infra to a new account in one and half months: Terraform, Cloudformation, Ansible and manual</li>
-  <li> Adopted Prometheus and integrated it with the infra for monitoring. We monitor at a resoultion of 10s, with Mean Time to First Response at 60s </li>
-  <li> Created entire CI/CD pipeline from scratch: Git (local) + Gitlab + Jenkins (with docker slaves in ECS) + Code deploy + AWS Systems Manager </li>
+  <li> Working in a team of 3, moved entire AWS infra to a new account in one and half months: Terraform, Cloudformation, Ansible and manual</li>
+  <li> Created entire CI/CD pipeline from scratch: Git (local) + Gitlab + Jenkins (with docker slaves in ECS) + AWS Systems Manager </li>
   <li> Integrated CI/CD pipeline with Gatling for applications performance testing during the development </li>
-  <li>  Wrote Custom app (django) which provides UI for crons monitoring, deployment\ and alerts </li>
+  <li> Wrote Custom app (django) which provides UI for crons monitoring, deployment and alerts </li>
   <li> Created/Maintaining Docker environments of Application Servers for developers, used in local development </li>
   <li> Put in processes for Access Control, Change Management, adopted Confluence for Documentation </li>
   <li> Optimized costs to keep it constant while the infra grew by 40 percent </li>
@@ -142,18 +152,17 @@ My current stint with Fireeye Inc, started when Fireeye was setting their SRE te
   <li> Working on AWS and Azure:  EC2, CloudFront, S3, Route 53, VPC, Cloudwatch etc (equivalent services in Azure)
     <ul>
       <li> Boto, AWS Ruby SDK, Azure Python SDK, Ansible for automating the workflows and management </li>
-      <li>Planned and executed the move of ec2 infra of 500+ servers from classic to VPC with zero downtime</li>
-      <li>Replicated the aws infra in azure using equivalent services of the latter</li></ul>
-  <li> Improved the monitoring infra (Sensu, Grafana, RabbitMQ, Burrow, Cloudwatch). Being a global product with 1.5 K+ servers, right monitoring enables infra  to be free of outages
+      <li> Planned and executed the move of ec2 infra of 500+ servers from classic to VPC with zero downtime</li>
+      <li> Replicated the aws infra in azure using equivalent services of the latter</li></ul>
+    <li> Improved the monitoring infra (Sensu, Grafana, RabbitMQ, Burrow, Cloudwatch) </li>
       <ul>
-        <li> Researched free alternatives of PagerDuty and integrated the alternative VictorOps in infra, eliminating night shifts for engineers for monitoring </li>
-        <li> Integrated monitoring with ‘slack’ to consolidate alerts for all into a single channel </li>
+        <li> Integrated VictorOps in infra, eliminating night shifts for engineers for monitoring </li>
         <li> Using Python Flask, developed a web application integrated with ’slack’  and g-calendar which returns the details of current oncall for a team </li>
-        <li> Integrated Burrow for kafka monitoring. Enhanced Burrow to have in memory state for consumers. Using Burrow to collect metrics for consumers </li>
+        <li> Integrated Burrow for kafka monitoring. Enhanced Burrow to have in memory state for kafka consumers </li>
       </ul>
   <li> Automated provisioning of Production, Staging, Dev infra using Ansible, terraform
       <ul>
-        <li>Using groovy, wrote a jenkins job to spawn multi node sandbox in staging infra, enabling developers to not depend on Ops for it </li>
+        <li> Using groovy, wrote a jenkins job to spawn multi node sandbox in staging infra, enabling developers to not depend on Ops for it </li>
       </ul>
   <li> Designed Centralized Logging (Elasticsearch, Fluentd, Kibana EFK) at helpshift which roughly gets traffic of about 100Mb/s
         <ul>
@@ -163,8 +172,6 @@ My current stint with Fireeye Inc, started when Fireeye was setting their SRE te
         <ul>
           <li> Wrote custom plugin for Objective C analysis using OCLint, cobertura, gcovr and lizard </li>
         </ul>
-        <li> Collaborated with developers to enhance the performance of applications, reduce infra costs and identify performance bottlenecks </li>
-        <li>Evaluated potential software products based on new and existing system development and migration requirements </li>
 </ul>
 
 

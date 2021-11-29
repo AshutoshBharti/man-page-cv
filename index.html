@@ -11,7 +11,7 @@
 
 <h1>NAME</h1>
 <p class="subtext">
-  Ashutosh Bharti - that person who does sre/devops at Fireeye Inc, Bangalore
+  Ashutosh Bharti - guardian of cloud-infra and data at Ocrolus Inc
 </p>
 
 <h1>Work Quote</h1>
@@ -21,7 +21,7 @@
 
 <h1>SYNOPSIS</h1>
 <p class="subtext">
-<a href="#option8">[--senior-site-reliability-engineer]</a>  <a href="#option1">[--site-reliability-engineer-and-lead]</a>  <a href="#option2">[--devops-engineer]</a> <a href="#option3">[--network-engineer]</a>
+ <a href="#option9">[--staff-site-reliability-engineer]</a> <a href="#option8">[--senior-site-reliability-engineer]</a>  <a href="#option1">[--site-reliability-engineer-and-lead]</a>  <a href="#option2">[--devops-engineer]</a> <a href="#option3">[--network-engineer]</a>
 </p>
 
 <h1>SEE</h1>
@@ -38,11 +38,15 @@ Joined Helpshift, as a Systems Engineer, started with running basic linux comman
 </p>
 
 <p class="subtext">
-Moved to Hungerbox as an SRE Lead managing a small team of 3 people (including me). I was hired to facilitate the movement of infra from one account to another and handle the daily order scale up from 40K to 4L. Wrote tons of terraform, boto3 and ansible to port the infra to IaC</a>.
+Moved to Hungerbox as an SRE Lead managing a small team of 2 people (including me). I was hired to facilitate the movement of infra from one account to another and prepare for the daily order scale up from 40K to 4L. Wrote tons of terraform, boto3 and ansible to port the infra to IaC</a>.
 </p>
 
 <p class="subtext">
-My current role as Senior SRE with Fireeye Inc, started when Fireeye was setting their SRE team in Bangalore for their product <a href="https://www.fireeye.com/products/helix.html">'Helix'</a>. Toiled hundreds of hours in efforts to move services from EC2 to EKS. Moved monitoring from Graphite to Prometheus + VictoriaMetrics. Most notable work would be writing a REST API service (backed by <a href="https://aws.amazon.com/documentdb/">Document DB</a>) which helps devs, operations and almost everyone at Fireeye to GET relevant information about services. SRE can PUT, POST or DELETE the information about the services.
+My role as Senior SRE with Fireeye Inc, started when Fireeye was setting their SRE team in Bangalore for their product <a href="https://www.fireeye.com/products/helix.html">'Helix'</a>. Toiled hundreds of hours in efforts to move services from EC2 to EKS. Moved monitoring from Graphite to Prometheus + VictoriaMetrics. Most notable work would be writing a REST API service (backed by <a href="https://aws.amazon.com/documentdb/">Document DB</a>) which helps devs, operations and almost everyone at Fireeye to GET relevant information about services. SRE can PUT, POST or DELETE the information about the services.
+</p>
+
+<p class="subtext">
+My current role as a Staff SRE (and lead) at Ocrolus Inc, Gurugram, is a story that unfloded mainly because of my love for data-science, data-analytics and streaming services (Kafka, Debezium, spark, Tableau, snowflake). Things that I have done great at so far are, implementing debezium for bringing data from AWS RDS to AWS MSK, bring down full data-sync (3TB) time from RDS to MSK to 6h (from 14h), moving development teams to use <a href="https://garden.io/">'garden'</a> for them to have the same code deployed and tested remotely without the hassle of maintaining local docker and k8s. Introducing access restrictions that prevents US data being visible to non-US employees and vice-versa.
 </p>
 
 <p class="subtext">
@@ -105,23 +109,36 @@ My current role as Senior SRE with Fireeye Inc, started when Fireeye was setting
   </tr>
   <tr>
     <td>Kafka, Zookeeper, Storm</td>
-    <td>Mongo</td>
-    <td>MySQL</td>
+    <td>Mongo, MySQL, PostgreSQL</td>
+    <td>Snowflake, Tableau, Spark</td>
     <td>ProxySQL</td>
   </tr>
 </table>
 </p>
 
 <h1 id="option5">HISTORY</h1>
+<p id="option9" class="subtext">
+--staff-site-reliability-engineer (and lead)<br>
+   : <a href="https://www.ocrolus.com/">Ocrolus Inc, Gurugram</a><br>
+   : May 2021 -  Present
+</p>
+<ul class="doublesubtext">
+  <li> SRE for Ocrolus Engineering and Data-platform </li>
+    <ul>
+      <li> Designed pipeline for bringing data from AWS RDS to AWS MSK. Currently the pipeline supports over 40 applications. <br> It can sync over 8TB data from various sources to Kafka in 6hrs</li>
+      <li> Complete CI/CD for dataplatform applications</li>
+      <li> Hiding PII data of US clients from non US employees with row level security in RDS (postgreSQl) and topic level security in kafka </li>
+    </ul>
+</ul>
 <p id="option8" class="subtext">
 --senior-site-reliability-engineer <br>
    : <a href="https://www.fireeye.com/">Fireeye Inc, Bangalore</a><br>
-   : August 2020 - Present
+   : August 2020 - May 2021
 </p>
 <ul class="doublesubtext">
   <li> SRE for Fireeye's 'Helix' platform: <a href="https://www.fireeye.com/products/helix.html">https://www.fireeye.com/products/helix.html</a> </li>
-  <li> Currently moving entire tech stack of 14 applications to EKS from EC2(ami) world
     <ul>
+      <li> Moved entire tech stack of 14 applications to EKS from EC2(ami) world </li>
       <li> Wrote a REST API service used by FirEye internally to get information about the infra. The service uses Document Db as its datastore. <br> Almost all our automations, IaC, treat this as *Source of Truth* </li>
       <li> Our apps are compute intensive (logs ingestion and analysis), leveraging k8s compute potential was needed to keep up and keep the cost down</li>
       <li> Our app servers emit metrics upto 10K samples per second (multiplied by 1000s of servers). To keep up with it shifted monitoring to Promethues + VictoriaMetrics from collectd + statsd + Graphite </li>
@@ -134,7 +151,7 @@ My current role as Senior SRE with Fireeye Inc, started when Fireeye was setting
 </p>
 <ul class="doublesubtext">
   <li> Working in a team of 3, moved entire AWS infra to a new account in one and half months: Terraform, Cloudformation, Ansible and manual</li>
-  <li> Created entire CI/CD pipeline from scratch: Git (local) + Gitlab + Jenkins (with docker slaves in ECS) + AWS Systems Manager </li>
+  <li> CI/CD pipeline: Git (local) + Gitlab + Jenkins (with docker slaves in ECS) + AWS Systems Manager </li>
   <li> Integrated CI/CD pipeline with Gatling for applications performance testing during the development </li>
   <li> Wrote Custom app (django) which provides UI for crons monitoring, deployment and alerts </li>
   <li> Created/Maintaining Docker environments of Application Servers for developers, used in local development </li>
